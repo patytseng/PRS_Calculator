@@ -284,7 +284,7 @@ def main():
     # summing results of each calculated PRS chunk
     for PRS_ID_library in PRS_ID_library_list:
         for key in ID_library:
-            ID_library[key] = round(ID_library[key] + PRS_ID_library[key],4)
+            ID_library[key] = ID_library[key] + PRS_ID_library[key]
         
     # writing output
     print('\nWriting output...')
